@@ -6,6 +6,18 @@ nav_philosophy: Philosophie
 nav_process: Processus
 nav_contact: Contact
 
+nav_about: À propos
+nav_materials: Matériaux
+nav_atelier: Atelier d'O
+nav_pros: Pour les pros
+nav_faq: FAQ
+nav_news: Actualités
+nav_webshop: Boutique
+
+placeholder_eyebrow: Bientôt disponible
+placeholder_body: "Cette page est en préparation à l'atelier. Revenez bientôt ou contactez le studio pour entamer une première conversation sur votre projet."
+placeholder_cta: Contacter le studio
+
 hero_tagline: "Des finitions raffinées pour les murs et les sols — conçues et créées en Belgique."
 hero_scroll: Défiler
 

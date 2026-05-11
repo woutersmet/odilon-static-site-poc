@@ -14,25 +14,7 @@
 </head>
 <body>
 
-<nav class="nav">
-  <div class="brand">ODILON</div>
-  <div class="right">
-    <ul>
-      <li><a href="#collections">{{ t.nav_collections }}</a></li>
-      <li><a href="#projects">{{ t.nav_projects }}</a></li>
-      <li><a href="#philosophy">{{ t.nav_philosophy }}</a></li>
-      <li><a href="#process">{{ t.nav_process }}</a></li>
-      <li><a href="#contact">{{ t.nav_contact }}</a></li>
-    </ul>
-    <div class="lang">
-      <a href="{{ '/' | relative_url }}"{% if page.lang == 'en' %} class="active"{% endif %}>EN</a>
-      <span class="sep">|</span>
-      <a href="{{ '/fr/' | relative_url }}"{% if page.lang == 'fr' %} class="active"{% endif %}>FR</a>
-      <span class="sep">|</span>
-      <a href="{{ '/nl/' | relative_url }}"{% if page.lang == 'nl' %} class="active"{% endif %}>NL</a>
-    </div>
-  </div>
-</nav>
+{% include nav.html %}
 
 <header class="hero" style="background-image: linear-gradient(180deg, rgba(20,30,22,0.45) 0%, rgba(20,30,22,0.65) 100%), url('{{ '/assets/images/hero.jpg' | relative_url }}');">
   <div>

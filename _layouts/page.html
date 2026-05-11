@@ -1,0 +1,77 @@
+---
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign prefix = "" -%}
+{%- if page.lang == "fr" -%}{%- assign prefix = "/fr" -%}{%- endif -%}
+{%- if page.lang == "nl" -%}{%- assign prefix = "/nl" -%}{%- endif -%}
+
+{%- comment -%}Pull the page title from the i18n nav strings via page.nav_key{%- endcomment -%}
+{%- if page.nav_key == "about" -%}{%- assign title = t.nav_about -%}{%- endif -%}
+{%- if page.nav_key == "materials" -%}{%- assign title = t.nav_materials -%}{%- endif -%}
+{%- if page.nav_key == "projects" -%}{%- assign title = t.nav_projects -%}{%- endif -%}
+{%- if page.nav_key == "atelier" -%}{%- assign title = t.nav_atelier -%}{%- endif -%}
+{%- if page.nav_key == "pros" -%}{%- assign title = t.nav_pros -%}{%- endif -%}
+{%- if page.nav_key == "faq" -%}{%- assign title = t.nav_faq -%}{%- endif -%}
+{%- if page.nav_key == "news" -%}{%- assign title = t.nav_news -%}{%- endif -%}
+{%- if page.nav_key == "webshop" -%}{%- assign title = t.nav_webshop -%}{%- endif -%}
+{%- if page.nav_key == "contact" -%}{%- assign title = t.nav_contact -%}{%- endif -%}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ title }} — Odilon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+</head>
+<body>
+
+{% include nav.html %}
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="marker">
+      <span>{{ page.section_num }}</span>
+      <span>{{ t.placeholder_eyebrow | upcase }}</span>
+    </div>
+    <h1 class="page-title">{{ title | upcase }}</h1>
+    <p class="page-lede">{{ t.placeholder_body }}</p>
+    <a class="btn" href="{{ prefix | append: '/contact/' | relative_url }}">{{ t.placeholder_cta }}</a>
+  </div>
+</section>
+
+<footer>
+  <div class="top">
+    <div>
+      <div class="brand">ODILON</div>
+      <p style="margin-top: 16px; max-width: 320px; color: var(--muted); font-size: 14px;">{{ t.foot_tag }}</p>
+    </div>
+    <div class="col">
+      <span>{{ t.foot_collections }}</span>
+      <a href="{{ prefix | append: '/materials/' | relative_url }}">{{ t.nav_materials }}</a>
+      <a href="{{ prefix | append: '/projects/'  | relative_url }}">{{ t.nav_projects }}</a>
+      <a href="{{ prefix | append: '/webshop/'   | relative_url }}">{{ t.nav_webshop }}</a>
+    </div>
+    <div class="col">
+      <span>{{ t.foot_studio }}</span>
+      <a href="{{ prefix | append: '/about/'   | relative_url }}">{{ t.nav_about }}</a>
+      <a href="{{ prefix | append: '/atelier-do/' | relative_url }}">{{ t.nav_atelier }}</a>
+      <a href="{{ prefix | append: '/news/'    | relative_url }}">{{ t.nav_news }}</a>
+    </div>
+    <div class="col">
+      <span>{{ t.foot_connect }}</span>
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="mailto:studio@odilon.be">{{ t.foot_newsletter }}</a>
+    </div>
+  </div>
+  <div class="bottom">
+    <div>{{ t.foot_copy }}</div>
+    <div>Antwerp · Belgium</div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign prefix = "" -%}
+{%- if page.lang == "fr" -%}{%- assign prefix = "/fr" -%}{%- endif -%}
+{%- if page.lang == "nl" -%}{%- assign prefix = "/nl" -%}{%- endif -%}
+
+{%- comment -%}One row per nav item: [key, label, route, extra-class]{%- endcomment -%}
+{%- assign items = "about|materials|projects|atelier|pros|faq|news|webshop|contact" | split: "|" -%}
+{%- assign routes = "/about/|/materials/|/projects/|/atelier-do/|/for-professionals/|/faq/|/news/|/webshop/|/contact/" | split: "|" -%}
+{%- assign labels = t.nav_about | append: "||" | append: t.nav_materials | append: "||" | append: t.nav_projects | append: "||" | append: t.nav_atelier | append: "||" | append: t.nav_pros | append: "||" | append: t.nav_faq | append: "||" | append: t.nav_news | append: "||" | append: t.nav_webshop | append: "||" | append: t.nav_contact | split: "||" -%}
+
+<nav class="nav">
+  <a class="brand" href="{{ prefix | append: '/' | relative_url }}">ODILON</a>
+  <div class="right">
+    <ul class="main-nav">
+      {%- for key in items -%}
+        {%- assign i = forloop.index0 -%}
+        {%- assign cls = "" -%}
+        {%- if key == "webshop" -%}{%- assign cls = "emphasis" -%}{%- endif -%}
+        {%- if page.nav_key == key -%}{%- assign cls = cls | append: " active" -%}{%- endif -%}
+        <li><a {% if cls != "" %}class="{{ cls | strip }}"{% endif %} href="{{ prefix | append: routes[i] | relative_url }}">{{ labels[i] }}</a></li>
+      {%- endfor -%}
+    </ul>
+    <div class="lang">
+      <a href="{{ '/' | relative_url }}"{% if page.lang == 'en' %} class="active"{% endif %}>EN</a>
+      <span class="sep">|</span>
+      <a href="{{ '/fr/' | relative_url }}"{% if page.lang == 'fr' %} class="active"{% endif %}>FR</a>
+      <span class="sep">|</span>
+      <a href="{{ '/nl/' | relative_url }}"{% if page.lang == 'nl' %} class="active"{% endif %}>NL</a>
+    </div>
+  </div>
+</nav>

@@ -6,6 +6,18 @@ nav_philosophy: Philosophy
 nav_process: Process
 nav_contact: Contact
 
+nav_about: About
+nav_materials: Materials
+nav_atelier: Atelier d'O
+nav_pros: For Professionals
+nav_faq: FAQ
+nav_news: News
+nav_webshop: Webshop
+
+placeholder_eyebrow: Coming soon
+placeholder_body: "This page is being prepared in the atelier. Check back shortly, or get in touch with the studio for an early conversation about your project."
+placeholder_cta: Contact the studio
+
 hero_tagline: "Beautifully crafted finishes for walls and floors — designed & created in Belgium."
 hero_scroll: Scroll
 

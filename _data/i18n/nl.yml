@@ -6,6 +6,18 @@ nav_philosophy: Filosofie
 nav_process: Proces
 nav_contact: Contact
 
+nav_about: Over ons
+nav_materials: Materialen
+nav_atelier: Atelier d'O
+nav_pros: Voor professionals
+nav_faq: FAQ
+nav_news: Nieuws
+nav_webshop: Webshop
+
+placeholder_eyebrow: Binnenkort
+placeholder_body: "Deze pagina wordt voorbereid in het atelier. Kom binnenkort terug, of neem contact op met de studio voor een eerste gesprek over uw project."
+placeholder_cta: Contacteer de studio
+
 hero_tagline: "Verfijnde afwerkingen voor muren en vloeren — ontworpen & gemaakt in België."
 hero_scroll: Scroll
 
