@@ -1,0 +1,86 @@
+page_title: "Odilon — Beautifully Crafted Finishes for Walls and Floors"
+
+nav_collections: Collections
+nav_projects: Projects
+nav_philosophy: Philosophy
+nav_process: Process
+nav_contact: Contact
+
+hero_tagline: "Beautifully crafted finishes for walls and floors — designed & created in Belgium."
+hero_scroll: Scroll
+
+about_marker: About Odilon Creations
+about_heading: "Odilon creates high-end decorative finishes for walls and floors. Designed and produced with care and precision in Belgium."
+about_caps: "Our mineral-based decorative finishes are developed with a deep understanding of pigment, composition and surface movement."
+
+intro_eyebrow: House of Finishes
+intro_heading_pre: "Material as "
+intro_heading_accent: "atmosphere."
+intro_body: "Odilon is a Belgian atelier devoted to the slow, considered craft of decorative finishes. Each surface is mineral, hand-applied, and developed in close conversation with architects and interior designers — built to age with grace and to give a room its quiet weight."
+intro_meta_founded: Founded
+intro_meta_founded_v: "Antwerp, 2017"
+intro_meta_origin: Origin
+intro_meta_origin_v: Made in Belgium
+intro_meta_avail: Available
+intro_meta_avail_v: Worldwide via studio
+
+coll_eyebrow: Collections
+coll_heading_line1: "Surfaces for the"
+coll_heading_line2: "considered interior."
+coll_lede: "Three families of finishes — each with its own grain, depth, and behaviour under light."
+coll_wall: Wall Finishes
+coll_wall_discover: Discover our wall finishes
+coll_wall_name: "Mineral plasters & lime washes"
+coll_wall_desc: "Hand-trowelled, breathable, with subtle cloud and movement."
+coll_floor: Floor Finishes
+coll_floor_discover: Discover our floor finishes
+coll_floor_name: Seamless poured floors
+coll_floor_desc: Monolithic surfaces in microcement and waxed concrete.
+coll_bespoke: Bespoke
+coll_bespoke_discover: Custom developments
+coll_bespoke_name: Studio commissions
+coll_bespoke_desc: Colour and texture developed for a single project.
+
+projects_heading: PROJECTS
+projects_desc: "We are entrusted with the most refined projects by some of today's leading architects. Odilon is a testament to Belgian design and craft, echoing across countries and cultures."
+
+phil_eyebrow: Philosophy
+phil_quote_pre: "“We work with hands, with patience, and with materials that have "
+phil_quote_em: memory
+phil_quote_post: ". A finish should belong to the room — not announce itself, but hold it.”"
+phil_sig: "— Odilon Atelier"
+
+proc_eyebrow: Process
+proc_heading_line1: From sample
+proc_heading_line2: to surface.
+proc_lede: "Every commission begins in the atelier. We develop samples in dialogue with you, then bring our applicators on-site to install the chosen finish by hand."
+proc_s1_t: Consultation
+proc_s1_d: "We review the project, the light, and the architecture — and recommend a family of finishes to explore."
+proc_s2_t: Sampling
+proc_s2_d: Bespoke A4 and A3 samples are produced in our atelier, refined until the tone and texture are exactly right.
+proc_s3_t: Application
+proc_s3_d: "Our trained applicators install the finish on-site, layer by layer, with the care of a single maker's hand."
+proc_s4_t: Aftercare
+proc_s4_d: We provide care guidance and remain available for touch-ups as the surface settles into the room.
+
+cont_eyebrow: Contact
+cont_heading_line1: Begin a project
+cont_heading_line2: with the atelier.
+cont_lede: "For trade enquiries, sample requests, and on-site visits, write to us below or visit our studio in Antwerp by appointment."
+cont_studio: Atelier Odilon
+cont_name: Name
+cont_email: Email
+cont_project: Project type
+cont_project_ph: "Residential · hospitality · retail"
+cont_message: Message
+cont_send: Send enquiry
+cont_sent: "Sent — thank you"
+
+foot_tag: "Beautifully crafted finishes for walls and floors, designed and created in Belgium."
+foot_collections: Collections
+foot_studio: Studio
+foot_connect: Connect
+foot_about: About
+foot_press: Press
+foot_newsletter: Newsletter
+foot_copy: "© 2026 Odilon Atelier"

@@ -1,0 +1,19 @@
+title: Odilon Creations
+description: Beautifully crafted decorative finishes for walls and floors, designed and produced in Belgium.
+baseurl: ""
+url: ""
+
+languages: [en, fr, nl]
+default_lang: en
+
+permalink: /:path/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle
+
+sass:
+  style: compressed

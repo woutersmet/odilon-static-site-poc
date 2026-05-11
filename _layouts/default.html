@@ -1,0 +1,232 @@
+---
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ t.page_title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="brand">ODILON</div>
+  <div class="right">
+    <ul>
+      <li><a href="#collections">{{ t.nav_collections }}</a></li>
+      <li><a href="#projects">{{ t.nav_projects }}</a></li>
+      <li><a href="#philosophy">{{ t.nav_philosophy }}</a></li>
+      <li><a href="#process">{{ t.nav_process }}</a></li>
+      <li><a href="#contact">{{ t.nav_contact }}</a></li>
+    </ul>
+    <div class="lang">
+      <a href="{{ '/' | relative_url }}"{% if page.lang == 'en' %} class="active"{% endif %}>EN</a>
+      <span class="sep">|</span>
+      <a href="{{ '/fr/' | relative_url }}"{% if page.lang == 'fr' %} class="active"{% endif %}>FR</a>
+      <span class="sep">|</span>
+      <a href="{{ '/nl/' | relative_url }}"{% if page.lang == 'nl' %} class="active"{% endif %}>NL</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="background-image: linear-gradient(180deg, rgba(20,30,22,0.45) 0%, rgba(20,30,22,0.65) 100%), url('{{ '/assets/images/hero.jpg' | relative_url }}');">
+  <div>
+    <div class="wordmark">ODILON</div>
+    <div class="tagline">{{ t.hero_tagline }}</div>
+  </div>
+  <div class="scroll">{{ t.hero_scroll }}</div>
+</header>
+
+<section class="statement">
+  <div class="marker"><span>[1]</span><span>{{ t.about_marker }}</span></div>
+  <h2 class="heavy">{{ t.about_heading }}</h2>
+</section>
+
+<section class="caps-band">
+  <p>{{ t.about_caps }}</p>
+</section>
+
+<section class="intro">
+  <div class="copy">
+    <div class="eyebrow">{{ t.intro_eyebrow }}</div>
+    <h2 class="display">{{ t.intro_heading_pre }}<span class="accent">{{ t.intro_heading_accent }}</span></h2>
+    <p class="lede">{{ t.intro_body }}</p>
+    <div class="meta">
+      <div><span>{{ t.intro_meta_founded }}</span><strong>{{ t.intro_meta_founded_v }}</strong></div>
+      <div><span>{{ t.intro_meta_origin }}</span><strong>{{ t.intro_meta_origin_v }}</strong></div>
+      <div><span>{{ t.intro_meta_avail }}</span><strong>{{ t.intro_meta_avail_v }}</strong></div>
+    </div>
+  </div>
+  <div class="image" style="background-image: url('{{ '/assets/images/wall.jpg' | relative_url }}');" role="img" aria-label="Odilon wall finish"></div>
+</section>
+
+<section id="collections" class="collections">
+  <div class="head">
+    <div>
+      <div class="eyebrow">{{ t.coll_eyebrow }}</div>
+      <h2 class="display">{{ t.coll_heading_line1 }}<br/>{{ t.coll_heading_line2 }}</h2>
+    </div>
+    <p class="lede">{{ t.coll_lede }}</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="thumb">
+        <div class="img" style="background-image: url('{{ '/assets/images/wall.jpg' | relative_url }}');"></div>
+        <div class="label">
+          <h3>{{ t.coll_wall }}</h3>
+          <p>{{ t.coll_wall_discover }}</p>
+        </div>
+      </div>
+      <div class="body">
+        <div class="name">{{ t.coll_wall_name }}</div>
+        <div class="desc">{{ t.coll_wall_desc }}</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb">
+        <div class="img" style="background-image: url('{{ '/assets/images/hero.jpg' | relative_url }}');"></div>
+        <div class="label">
+          <h3>{{ t.coll_floor }}</h3>
+          <p>{{ t.coll_floor_discover }}</p>
+        </div>
+      </div>
+      <div class="body">
+        <div class="name">{{ t.coll_floor_name }}</div>
+        <div class="desc">{{ t.coll_floor_desc }}</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb">
+        <div class="img" style="background-image: url('{{ '/assets/images/projects.jpg' | relative_url }}');"></div>
+        <div class="label">
+          <h3>{{ t.coll_bespoke }}</h3>
+          <p>{{ t.coll_bespoke_discover }}</p>
+        </div>
+      </div>
+      <div class="body">
+        <div class="name">{{ t.coll_bespoke_name }}</div>
+        <div class="desc">{{ t.coll_bespoke_desc }}</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="num">[3]</div>
+  <h2 class="huge">{{ t.projects_heading }}</h2>
+  <p class="desc">{{ t.projects_desc }}</p>
+  <div class="gallery">
+    <div class="tile" style="background-image: url('{{ '/assets/images/wall.jpg' | relative_url }}');"></div>
+    <div class="tile" style="background-image: url('{{ '/assets/images/hero.jpg' | relative_url }}');"></div>
+    <div class="tile" style="background-image: url('{{ '/assets/images/projects.jpg' | relative_url }}');"></div>
+  </div>
+</section>
+
+<section id="philosophy" class="philosophy">
+  <div class="eyebrow">{{ t.phil_eyebrow }}</div>
+  <h2>{{ t.phil_quote_pre }}<em>{{ t.phil_quote_em }}</em>{{ t.phil_quote_post }}</h2>
+  <div class="sig">{{ t.phil_sig }}</div>
+</section>
+
+<section id="process" class="process">
+  <div class="inner">
+    <div>
+      <div class="eyebrow">{{ t.proc_eyebrow }}</div>
+      <h2 class="display">{{ t.proc_heading_line1 }}<br/>{{ t.proc_heading_line2 }}</h2>
+      <p class="lede" style="color: rgba(232,227,214,0.7);">{{ t.proc_lede }}</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <div><h4>{{ t.proc_s1_t }}</h4><p>{{ t.proc_s1_d }}</p></div>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <div><h4>{{ t.proc_s2_t }}</h4><p>{{ t.proc_s2_d }}</p></div>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <div><h4>{{ t.proc_s3_t }}</h4><p>{{ t.proc_s3_d }}</p></div>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <div><h4>{{ t.proc_s4_t }}</h4><p>{{ t.proc_s4_d }}</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="inner">
+    <div>
+      <div class="eyebrow">{{ t.cont_eyebrow }}</div>
+      <h2 class="display">{{ t.cont_heading_line1 }}<br/>{{ t.cont_heading_line2 }}</h2>
+      <p class="lede">{{ t.cont_lede }}</p>
+      <div style="margin-top: 40px; font-size: 14px; line-height: 2;">
+        <div>{{ t.cont_studio }}</div>
+        <div style="color: var(--muted);">Leopoldstraat 24, 2000 Antwerp</div>
+        <div style="color: var(--muted);">studio@odilon.be · +32 3 000 00 00</div>
+      </div>
+    </div>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent={{ t.cont_sent | jsonify }};">
+      <div>
+        <label for="name">{{ t.cont_name }}</label>
+        <input id="name" type="text" required />
+      </div>
+      <div>
+        <label for="email">{{ t.cont_email }}</label>
+        <input id="email" type="email" required />
+      </div>
+      <div>
+        <label for="project">{{ t.cont_project }}</label>
+        <input id="project" type="text" placeholder="{{ t.cont_project_ph }}" />
+      </div>
+      <div>
+        <label for="msg">{{ t.cont_message }}</label>
+        <textarea id="msg" rows="4"></textarea>
+      </div>
+      <button class="btn" type="submit">{{ t.cont_send }}</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="top">
+    <div>
+      <div class="brand">ODILON</div>
+      <p style="margin-top: 16px; max-width: 320px; color: var(--muted); font-size: 14px;">{{ t.foot_tag }}</p>
+    </div>
+    <div class="col">
+      <span>{{ t.foot_collections }}</span>
+      <a href="#collections">{{ t.coll_wall }}</a>
+      <a href="#collections">{{ t.coll_floor }}</a>
+      <a href="#collections">{{ t.coll_bespoke }}</a>
+    </div>
+    <div class="col">
+      <span>{{ t.foot_studio }}</span>
+      <a href="#">{{ t.foot_about }}</a>
+      <a href="#process">{{ t.nav_process }}</a>
+      <a href="#">{{ t.foot_press }}</a>
+    </div>
+    <div class="col">
+      <span>{{ t.foot_connect }}</span>
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="mailto:studio@odilon.be">{{ t.foot_newsletter }}</a>
+    </div>
+  </div>
+  <div class="bottom">
+    <div>{{ t.foot_copy }}</div>
+    <div>Antwerp · Belgium</div>
+  </div>
+</footer>
+
+</body>
+</html>
